@@ -12,9 +12,11 @@ wsl docker run --rm flask-book-library pytest tests/ -v
 # Zadanie 2
 
 Token składa się z kilku segmentów przedzielonych kropką. Rezultat dekodowania:
-![Wynikowy token](img/token.png)
+![Rezultat dekodowania](img/dekodowanie.png)
 
 W headerze zmieniono "HS256" na "none", w payload account z "Bob" na "administrator". Token kończy się kropką, bo signature nie jest potrzebne.
+
+![Wynikowy token](img/token.png)
 
 
 Po wysłaniu powstałego tokena do odpowiedniego endpointu otrzymuję następujący rezultat:
